@@ -45,17 +45,21 @@ export const todos = [
   {
     id: 1,
     body: "Welcome To do",
+    status: false,
   },
   {
     id: 2,
     body: "Create Your to-dos",
+    status: false,
   },
   {
     id: 3,
     body: "Set specific alert forms for to-dos in you notebook",
+    status: false,
   },
   {
     id: 4,
     body: "Tap on the todo content to edit",
+    status: false,
   },
 ];

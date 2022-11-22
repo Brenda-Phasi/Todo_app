@@ -1,39 +1,24 @@
-import React from 'react'
-import styled from 'styled-components';
+// import { Radio } from "@mui/material";
+import React from "react";
+import styled from "styled-components";
+import RadioBtn from "./RadioBtn";
 
-const Todo = ({body}) => {
+const Todo = ({ body, status, onStatus }) => {
+  // const click = (event) => {
+  //   if (event.target.Radio.textDecoration) {
+  //     event.target.Radio.removeProperty("text-decoration");
+  //   } else {
+  //     event.target.Radio.setPropery("text-decoration", "line-through");
+  //   }
+
   return (
     <div>
-        <Container>
-        <input type="radio" />
-        <h4>
-          {body}
-        </h4>
+      <Container>
+        <RadioBtn body={body} status={status} onStatus={onStatus} />
       </Container>
     </div>
-  )
-}
-const Container = styled.div`
-background: #f8f8f8;
-padding: 10px 6px;
-display: flex;
-/* flex-direction: column; */
-/* gap: 5px; */
-margin-top: 10px;
-border-radius: 5px;
-
-  h4{
-    margin: 0%;
-    /* margin-top: 10px; */
-    font-weight: 500;
-    width: 70%;
-    overflow-x: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-`;
-const input = styled.div`
- 
-`;
+  );
+};
+const Container = styled.div``;
 
 export default Todo;
